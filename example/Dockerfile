@@ -1,4 +1,4 @@
-FROM goodforgod/debian-jre8-oracle
+FROM goodforgod/debian-jre10-oracle
 
 COPY helloworld-1.0.0.jar /
 VOLUME /tmp/logs
