@@ -1,5 +1,5 @@
 # Docker Debian Oracle JRE 10
-Docker Debian Slim image with cleaned Oracle JRE 10 Update 1 (size 253MB)
+Docker Debian Slim image with cleaned Oracle JRE 10 Update 1 (size 252MB)
 
 You must accept the [Oracle Binary Code License Agreement for Java SE](http://www.oracle.com/technetwork/java/javase/terms/license/index.html) to use this image.
 

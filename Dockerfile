@@ -55,7 +55,6 @@ RUN cd /tmp \
 	$JAVA_HOME/lib/oblique-fonts \
 	$JAVA_HOME/plugin \
 	$JAVA_HOME/bin/jjs \
-    && apt-get upgrade -y \
     && apt-get remove -y wget \
     && apt-get clean -y \
     && apt-get autoremove -y \
