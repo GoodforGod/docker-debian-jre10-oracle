@@ -60,6 +60,7 @@ RUN cd /tmp \
     && apt-get autoclean \
     && rm -rf /tmp/* \
     && rm -rf /var/cache/apk/* \
+    && rm -rf /var/cache/apt/archives/* \
 	&& useradd -ms /bin/bash app
 
 # Add java to path
