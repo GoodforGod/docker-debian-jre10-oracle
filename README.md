@@ -9,17 +9,15 @@ So image have all *JVM* parts to run *Java applications* in Docker containers.
 
 Image contains only Java Runtime Environment, so you must have compiled Java application.
 
-There are two base images:
+There are such tags:
 
-#### Latest
-Uses base image [Debian Sid Slim](https://hub.docker.com/_/debian/) (63.3MB)
+#### *latest*
+* Uses base image [Debian Sid Slim](https://hub.docker.com/_/debian/) *(63.3MB)*
+* Image size with JRE *(252MB)*
 
-Image size with JRE (252MB)
-
-#### Stretch
-Uses base image [Debian Stretch Slim](https://hub.docker.com/_/debian/) (55.3MB)
-
-Image size with JRE (237MB)
+#### *stretch*
+* Uses base image [Debian Stretch Slim](https://hub.docker.com/_/debian/) *(55.3MB)*
+* Image size with JRE *(237MB)*
 
 ## Usage
 Image have docker *USER* named **app** so you can use it for your application.
