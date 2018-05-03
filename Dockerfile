@@ -34,33 +34,21 @@ RUN cd /tmp \
 	&& ln -s $JAVA_HOME $JAVA_HOME/bin/* /usr/bin/ \
 	&& rm -rf $JAVA_HOME/*src.zip \
 	$JAVA_HOME/lib/*javafx* \
+	$JAVA_HOME/lib/*jfx* \
+	$JAVA_HOME/lib/*awt* \
 	$JAVA_HOME/lib/plugin.jar \
-	$JAVA_HOME/lib/ext/jfxrt.jar \
+	$JAVA_HOME/lib/plugin-legacy.jar \
 	$JAVA_HOME/lib/javaws.jar \
 	$JAVA_HOME/lib/desktop \
-	$JAVA_HOME/lib/fonts \
+	$JAVA_HOME/lib/deploy \
 	$JAVA_HOME/lib/deploy* \
-	$JAVA_HOME/lib/*javafx* \
-	$JAVA_HOME/lib/*jfx* \
-	$JAVA_HOME/lib/amd64/libdecora_sse.so \
-	$JAVA_HOME/lib/amd64/libprism_*.so \
-	$JAVA_HOME/lib/amd64/libfxplugins.so \
-	$JAVA_HOME/lib/amd64/libglass.so \
-	$JAVA_HOME/lib/amd64/libgstreamer-lite.so \
-	$JAVA_HOME/lib/amd64/libjavafx*.so \
-	$JAVA_HOME/lib/amd64/libjfx*.so \
-	$JAVA_HOME/lib/ext/nashorn.jar \
-	$JAVA_HOME/lib/jfr.jar \
-	$JAVA_HOME/lib/jfr \
+	$JAVA_HOME/lib/fonts \
 	$JAVA_HOME/lib/oblique-fonts \
-	$JAVA_HOME/plugin \
-	$JAVA_HOME/bin/jjs \
     && apt-get remove -y wget \
     && apt-get clean -y \
     && apt-get autoremove -y \
     && apt-get autoclean -y \
     && rm -rf /tmp/* \
-    && rm -rf /var/cache/apk/* \
     && rm -rf /var/cache/apt/archives/* \
 	&& useradd -ms /bin/bash app
 
